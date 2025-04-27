@@ -372,7 +372,7 @@ export default function Home() {
       </div>
 
       {/* Services Section with New Background */}
-      <div id="#Service" className='py-20 bg-gradient-to-br from-gray-50 to-purple-50 relative overflow-hidden'>
+      <div id="service" className='py-20 bg-gradient-to-br from-gray-50 to-purple-50 relative overflow-hidden'>
         {/* Abstract Background Elements */}
         <motion.div
           className='absolute top-0 right-0 w-64 h-64 bg-purple-200/30 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl'
@@ -556,7 +556,7 @@ export default function Home() {
       </div>
 
       {/* Projects Section */}
-      <ProjectSection />
+      <ProjectSection  />
 
       {/* Team Section */}
       <TeamSection />
@@ -564,7 +564,7 @@ export default function Home() {
       {/* Popular Packages Section */}
 
       {/* Testimonials Section */}
-      <div className='py-20 bg-gradient-to-br from-purple-50 to-indigo-50'>
+      <div  className='py-20 bg-gradient-to-br from-purple-50 to-indigo-50'>
         <div className='container mx-auto px-4'>
           <div className='text-center mb-16'>
             <motion.div
