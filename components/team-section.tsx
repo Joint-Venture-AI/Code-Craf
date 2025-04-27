@@ -95,7 +95,7 @@ export default function TeamCarousel() {
   const duplicatedTeamMembers = [...teamMembers, ...teamMembers];
 
   return (
-    <section id="about" className='w-full max-w-7xl mx-auto  px-4'>
+    <section  className='w-full max-w-7xl mx-auto px-4 pb-4'>
       <div className='text-center mb-12'>
         <h2 className='text-4xl font-bold'>
           Our <span className='text-purple-600'>Team</span>

@@ -294,6 +294,7 @@ export default function ProjectSection() {
           viewport={{ once: true }}
         >
           <Button
+          id="about"
             className='bg-purple-600 hover:bg-purple-700 text-white'
             onClick={() =>
               window.open(

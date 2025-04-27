@@ -226,7 +226,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`border-b border-gray-100 sticky top-0 z-50 transition-all duration-300 ${
+      className={`border-b border-gray-100 sticky top-0 z-50 transition-all duration-300   ${
         isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
@@ -313,18 +313,7 @@ Portfolio
 </Link>
 
             
-            {/* <Link
-              href='/portfolio'
-              className='text-gray-700 hover:text-purple-600 transition-colors'
-            >
-              Portfolio
-            </Link> */}
-            {/* <Link
-              href='/about'
-              className='text-gray-700 hover:text-purple-600 transition-colors'
-            >
-              About
-            </Link> */}
+          
             <Link
   href="#about" // Make sure this matches the target ID
   onClick={(e) => {
@@ -336,14 +325,14 @@ Portfolio
   }}
   className="text-gray-700 hover:text-purple-600 transition-colors"
 >
-About
+Teams
 </Link>
-            <Link
+            {/* <Link
               href='/faq'
               className='text-gray-700 hover:text-purple-600 transition-colors'
             >
               FAQ
-            </Link>
+            </Link> */}
             {/* <Link
               href='#contact'
               className='text-gray-700 hover:text-purple-600 transition-colors'

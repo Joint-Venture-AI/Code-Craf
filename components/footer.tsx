@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className='space-y-2'>
               <li>
                 <Link
-                  href='#about'
+                  href='#'
                   className='text-gray-600 hover:text-purple-600 transition-colors'
                 >
                   About Me
@@ -76,12 +76,13 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href='#faq'
+                  href='#about'
                   className='text-gray-600 hover:text-purple-600 transition-colors'
                 >
-                  FAQ
+                  Teams
                 </Link>
               </li>
+            
               <li>
                 <Link
                   href='#contact'
@@ -168,13 +169,13 @@ export default function Footer() {
           </p>
           <div className='flex space-x-6 mt-4 md:mt-0'>
             <Link
-              href='/privacy'
+              href='#'
               className='text-gray-600 hover:text-purple-600 transition-colors text-sm'
             >
               Privacy Policy
             </Link>
             <Link
-              href='/terms'
+              href='#'
               className='text-gray-600 hover:text-purple-600 transition-colors text-sm'
             >
               Terms of Service
