@@ -9,7 +9,7 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NexusAI | Advanced AI Solutions",
+  title: "CodeCraf | Advanced AI Solutions",
   description:
     "Cutting-edge AI solutions for businesses including chatbots, GPT integration, predictive analytics, and custom AI development",
     generator: 'v0.dev'

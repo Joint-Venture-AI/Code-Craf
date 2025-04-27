@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Brain } from "lucide-react";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,6 +36,13 @@ export default function Navbar() {
               <Brain className='h-5 w-5 text-white' />
             </div>
             <span className='font-bold text-xl'>CodeCraf</span>
+            {/* <Image
+              src='/logo.png'
+              alt='Logo'
+              width={60}
+              height={40}
+              className=''
+              /> */}
           </div>
 
           {/* Mobile menu button */}

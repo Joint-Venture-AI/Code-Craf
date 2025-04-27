@@ -227,8 +227,8 @@ export default function Home() {
                   >
                     {/* <Brain className='h-48 w-48 text-white' /> */}
                     <Image
-                      src={"/main.webp"}
-                      className='rounded-full'
+                      src={"/image.png"}
+                      className='rounded-full '
                       width={300}
                       height={300}
                       alt={"Shuvon"}
@@ -322,7 +322,7 @@ export default function Home() {
               {
                 title: "Expertise & Experience",
                 description:
-                  "Expert-vetted AI developer with 5+ years' experience in AI, NLP, and mobile app development.",
+                  "Expert-vetted AI developer with 5+ years' experience in AI, NLP, mobile app and website development .",
                 icon: <Award className='h-8 w-8 text-purple-600' />,
               },
               {
@@ -372,7 +372,7 @@ export default function Home() {
       </div>
 
       {/* Services Section with New Background */}
-      <div className='py-20 bg-gradient-to-br from-gray-50 to-purple-50 relative overflow-hidden'>
+      <div id="#Service" className='py-20 bg-gradient-to-br from-gray-50 to-purple-50 relative overflow-hidden'>
         {/* Abstract Background Elements */}
         <motion.div
           className='absolute top-0 right-0 w-64 h-64 bg-purple-200/30 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl'
@@ -562,77 +562,6 @@ export default function Home() {
       <TeamSection />
 
       {/* Popular Packages Section */}
-      <div className='py-20 bg-white'>
-        <div className='container mx-auto px-4'>
-          <div className='text-center mb-16'>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <Badge className='mb-4 text-base bg-purple-100 text-purple-700 hover:bg-purple-100 border-purple-200 px-5 py-1'>
-                Fiverr Packages
-              </Badge>
-              <h2 className='text-3xl md:text-4xl font-bold'>
-                Choose Your{" "}
-                <span className='text-purple-600'>Perfect Package</span>
-              </h2>
-              <p className='mt-4 text-gray-600 max-w-3xl mx-auto'>
-                Select from our most popular Fiverr packages, designed to meet
-                different needs and budgets.
-              </p>
-            </motion.div>
-          </div>
-
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-            <ServicePackage
-              title='Basic'
-              price={99}
-              description='Perfect for startups and small businesses looking to explore AI solutions.'
-              features={[
-                "Basic AI Chatbot",
-                "1 Platform Integration",
-                "Basic Training Data",
-                "2 Days Delivery",
-                "2 Revisions",
-              ]}
-              isPopular={false}
-            />
-
-            <ServicePackage
-              title='Standard'
-              price={199}
-              description='Ideal for growing businesses that need more comprehensive AI solutions.'
-              features={[
-                "Advanced AI Chatbot",
-                "Multi-platform Integration",
-                "Custom Training Data",
-                "3 Days Delivery",
-                "5 Revisions",
-                "30 Days Support",
-              ]}
-              isPopular={true}
-            />
-
-            <ServicePackage
-              title='Premium'
-              price={349}
-              description='Enterprise-grade AI solutions with full customization and priority support.'
-              features={[
-                "Enterprise AI Solution",
-                "Full API Integration",
-                "Advanced Training & Analytics",
-                "5 Days Delivery",
-                "Unlimited Revisions",
-                "60 Days Support",
-                "Source Code Included",
-              ]}
-              isPopular={false}
-            />
-          </div>
-        </div>
-      </div>
 
       {/* Testimonials Section */}
       <div className='py-20 bg-gradient-to-br from-purple-50 to-indigo-50'>
@@ -644,7 +573,7 @@ export default function Home() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <Badge className='mb-4 bg-purple-100 text-purple-700 hover:bg-purple-100 border-purple-200 px-3 py-1'>
+              <Badge className='mb-4 text-base bg-purple-100 text-purple-700 hover:bg-purple-100 border-purple-200 px-5 py-1'>
                 Client Feedback
               </Badge>
               <h2 className='text-3xl md:text-4xl font-bold'>
@@ -658,36 +587,39 @@ export default function Home() {
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+          <TestimonialCard
+              quote='Collaborating with Shovon has been a great experience time and time again. He brings both talent and dedication to every project, handling challenges with ease and delivering polished, high-quality work. If you are looking for a dependable developer who goes the extra mile he is a fantastic choice.'
+              author='imdjohirulfin01'
+              position='United States'
+              avatar='/imdjohirulfin01.webp'
+              rating={5}
+              date='3 months ago'
+            />
             <TestimonialCard
-              quote='The chatbot solution exceeded my expectations. Response times have decreased by 80% while customer satisfaction has increased significantly.'
-              author='Sarah Johnson'
-              position='E-commerce Store Owner'
-              avatar='/placeholder.svg?height=100&width=100'
+              quote='Shovon and his team are so helpful and they are very passionate about their work. You can trust you are in good hands with Shovon and his team as they want to see you succeed and are happy to help, answer any questions, and make any changes.'
+              author='maxilef'
+              position='United States'
+              avatar='/maxllef.webp'
               rating={5}
               date='2 weeks ago'
             />
             <TestimonialCard
-              quote='Incredible work on our GPT integration. The implementation was smooth and the results have been fantastic. Will definitely order again!'
-              author='Michael Chen'
-              position='Tech Startup Founder'
-              avatar='/placeholder.svg?height=100&width=100'
+              quote='I’ve consistently been impressed with Shovon’s expertise and reliable execution. He continues to be a valuable asset to our AI projects, and I look forward to working with him again.'
+              author='davisdebard'
+              position='United States'
+              avatar='/davisdebard.jpg'
               rating={5}
               date='1 month ago'
             />
-            <TestimonialCard
-              quote='The custom AI solution for our healthcare practice has improved patient outcomes and streamlined our administrative processes. Truly transformative.'
-              author='Dr. Emily Rodriguez'
-              position='Medical Practice Director'
-              avatar='/placeholder.svg?height=100&width=100'
-              rating={5}
-              date='3 months ago'
-            />
+           
           </div>
 
           <div className='text-center mt-12'>
             <Button
               className='bg-white hover:bg-gray-50 text-purple-600 border border-purple-200'
-              onClick={() => window.open("https://www.fiverr.com/", "_blank")}
+              onClick={() =>
+                window.open("https://www.fiverr.com/code_craf", "_blank")
+              }
             >
               View All Reviews on Fiverr <ArrowRight className='ml-2 h-4 w-4' />
             </Button>
@@ -705,7 +637,7 @@ export default function Home() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <Badge className='mb-4 bg-purple-100 text-purple-700 hover:bg-purple-100 border-purple-200 px-3 py-1'>
+              <Badge className='mb-4 text-base bg-purple-100 text-purple-700 hover:bg-purple-100 border-purple-200 px-5 py-1'>
                 Get In Touch
               </Badge>
               <h2 className='text-3xl md:text-4xl font-bold'>
@@ -763,11 +695,9 @@ export default function Home() {
                       </div>
                       <div>
                         <h4 className='font-medium text-gray-900'>
-                          Top Rated Seller
+                          Level 2 Seller
                         </h4>
-                        <p className='text-gray-600'>
-                          Level 2 seller with 120+ positive reviews
-                        </p>
+                        <p className='text-gray-600'>200+ positive reviews</p>
                       </div>
                     </motion.div>
 
@@ -784,7 +714,7 @@ export default function Home() {
                           Fast Delivery
                         </h4>
                         <p className='text-gray-600'>
-                          Most projects delivered within 2-3 days
+                          Most projects are delivered promptly.
                         </p>
                       </div>
                     </motion.div>
@@ -827,7 +757,7 @@ export default function Home() {
                         matches your needs
                       </p>
                     </motion.li>
-                    <motion.li
+                    {/* <motion.li
                       className='flex items-start gap-3'
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -840,7 +770,7 @@ export default function Home() {
                       <p className='text-gray-700'>
                         Choose your package (Basic, Standard, or Premium)
                       </p>
-                    </motion.li>
+                    </motion.li> */}
                     <motion.li
                       className='flex items-start gap-3'
                       initial={{ opacity: 0, x: -20 }}
@@ -849,7 +779,7 @@ export default function Home() {
                       viewport={{ once: true }}
                     >
                       <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#1dbf73] text-white flex items-center justify-center text-sm font-bold'>
-                        3
+                        2
                       </div>
                       <p className='text-gray-700'>
                         Provide project details and requirements
@@ -863,7 +793,7 @@ export default function Home() {
                       viewport={{ once: true }}
                     >
                       <div className='flex-shrink-0 w-6 h-6 rounded-full bg-[#1dbf73] text-white flex items-center justify-center text-sm font-bold'>
-                        4
+                        3
                       </div>
                       <p className='text-gray-700'>
                         Complete your order and we'll start working immediately
@@ -879,7 +809,10 @@ export default function Home() {
                       <Button
                         className='w-full bg-[#1dbf73] hover:bg-[#19a463] text-white flex items-center justify-center gap-2 py-6'
                         onClick={() =>
-                          window.open("https://www.fiverr.com/", "_blank")
+                          window.open(
+                            "https://www.fiverr.com/code_craf",
+                            "_blank"
+                          )
                         }
                       >
                         Visit Our Fiverr Profile{" "}
