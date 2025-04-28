@@ -82,7 +82,7 @@ export default function Home() {
                 Level 2 on Fiverr
               </Badge>
 
-              <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight'>
+              <h1 className='text-4xl md:text-5xl lg:text-[45px] font-bold text-white mb-4 leading-relaxed'>
                 Professional{" "}
                 <motion.span
                   className='text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-cyan-300'
@@ -94,15 +94,16 @@ export default function Home() {
                     repeatType: "reverse",
                   }}
                 >
-                  AI Solutions
+                  AI, Mobile App, and Web Development
                 </motion.span>{" "}
-                on Fiverr
+                <br />
+                <span className='text-[#1dbf73]'> on Fiverr</span>
               </h1>
 
               <p className='text-lg md:text-xl text-purple-100/90 mb-8 max-w-2xl'>
-                We deliver premium AI development services on Fiverr with 100%
-                satisfaction guarantee. From chatbots to custom AI solutions, we
-                bring your ideas to life.
+                Empowering your ideas with custom AI solutions, cutting-edge
+                apps, and stunning websites — all with a 100% satisfaction
+                guarantee.
               </p>
 
               <div className='flex flex-wrap gap-4 justify-center md:justify-start mb-8'>
@@ -372,7 +373,10 @@ export default function Home() {
       </div>
 
       {/* Services Section with New Background */}
-      <div id="service" className='py-20 bg-gradient-to-br from-gray-50 to-purple-50 relative overflow-hidden'>
+      <div
+        id='service'
+        className='py-20 bg-gradient-to-br from-gray-50 to-purple-50 relative overflow-hidden'
+      >
         {/* Abstract Background Elements */}
         <motion.div
           className='absolute top-0 right-0 w-64 h-64 bg-purple-200/30 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl'
@@ -556,7 +560,7 @@ export default function Home() {
       </div>
 
       {/* Projects Section */}
-      <ProjectSection  />
+      <ProjectSection />
 
       {/* Team Section */}
       <TeamSection />
@@ -564,7 +568,7 @@ export default function Home() {
       {/* Popular Packages Section */}
 
       {/* Testimonials Section */}
-      <div  className='py-20 bg-gradient-to-br from-purple-50 to-indigo-50'>
+      <div className='py-20 bg-gradient-to-br from-purple-50 to-indigo-50'>
         <div className='container mx-auto px-4'>
           <div className='text-center mb-16'>
             <motion.div
@@ -587,7 +591,7 @@ export default function Home() {
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-          <TestimonialCard
+            <TestimonialCard
               quote='Collaborating with Shovon has been a great experience time and time again. He brings both talent and dedication to every project, handling challenges with ease and delivering polished, high-quality work. If you are looking for a dependable developer who goes the extra mile he is a fantastic choice.'
               author='imdjohirulfin01'
               position='United States'
@@ -611,7 +615,6 @@ export default function Home() {
               rating={5}
               date='1 month ago'
             />
-           
           </div>
 
           <div className='text-center mt-12'>
