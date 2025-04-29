@@ -214,18 +214,9 @@ const teamMembers: TeamMember[] = [
     description:
       "AI expert with 2+ years of experience in developing cutting-edge solutions for businesses worldwide.",
   },
-  {
-    id: 3,
-    name: "Abdul Sattar",
-    role: "Senior Software Engineer",
-    image: "/satter.png",
-    bio: "Expert in data analysis and visualization with a focus on extracting actionable insights.",
-    description:
-      "Backend systems expert with a focus on building scalable and efficient applications.",
-  },
 
   {
-    id: 4,
+    id: 3,
     name: "Md Rakibul Islam",
     role: "Full-Stack Developer",
     image: "/rakib.png",
@@ -234,7 +225,7 @@ const teamMembers: TeamMember[] = [
       "Expert in building robust backend systems and intuitive frontends for AI-powered applications.",
   },
   {
-    id: 5,
+    id: 4,
     name: "Zaman Sheikh",
     role: "Mobile App Developer",
     image: "/zaman.png",
@@ -243,7 +234,7 @@ const teamMembers: TeamMember[] = [
       "Creates seamless mobile experiences that integrate advanced AI capabilities for iOS and Android.",
   },
   {
-    id: 6,
+    id: 5,
     name: "Zakaria Rabby",
     role: "UI/UX Designer",
     image: "/zakaria.png",
@@ -252,7 +243,7 @@ const teamMembers: TeamMember[] = [
       "Designs intuitive interfaces that make complex AI technologies accessible and user-friendly.",
   },
   {
-    id: 7,
+    id: 6,
     name: "Sharif Mahamud",
     role: "Full-Stack Developer",
     image: "/sharif.png",
@@ -261,13 +252,22 @@ const teamMembers: TeamMember[] = [
       "Full-stack developer with a focus on building scalable and efficient applications.",
   },
   {
-    id: 8,
+    id: 7,
     name: "Sadiqul Islam",
     role: "Software Engineer",
     image: "/sadiqul-islam.png",
     bio: "Expert in data analysis and visualization with a focus on extracting actionable insights.",
     description:
       "Expert in data analysis and visualization with a focus on extracting actionable insights.",
+  },
+  {
+    id: 8,
+    name: "Abdul Sattar",
+    role: "Senior Software Engineer",
+    image: "/satter.png",
+    bio: "Expert in data analysis and visualization with a focus on extracting actionable insights.",
+    description:
+      "Backend systems expert with a focus on building scalable and efficient applications.",
   },
 ];
 
@@ -295,7 +295,7 @@ export default function TeamCarousel() {
             loop: true,
             slidesToScroll: 1,
           }}
-          className='w-full '
+          className='w-full'
         >
           <CarouselContent className='-ml-4'>
             {teamMembers.map((member) => (
@@ -309,10 +309,8 @@ export default function TeamCarousel() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          {/* <div className="flex items-center justify-center mt-8 gap-4">
-          <CarouselPrevious className="relative static transform-none mr-2" />
-          <CarouselNext className="relative static transform-none ml-2" />
-        </div> */}
+          <CarouselPrevious className='absolute left-2 top-56 transform-none mr-2' />
+          <CarouselNext className='absolute right-2 top-56 transform-none ml-2' />
         </Carousel>
       </div>
     </div>

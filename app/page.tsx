@@ -82,7 +82,7 @@ export default function Home() {
                 Level 2 on Fiverr
               </Badge>
 
-              <h1 className='text-4xl md:text-5xl lg:text-[45px] font-bold text-white mb-4 leading-relaxed'>
+              {/* <h1 className='text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-4 leading-[90px]'>
                 Professional{" "}
                 <motion.span
                   className='text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-cyan-300'
@@ -94,10 +94,39 @@ export default function Home() {
                     repeatType: "reverse",
                   }}
                 >
-                  AI, Mobile App, and Web Development
+                  AI,
+                  <br /> App & Web Development <br />
                 </motion.span>{" "}
-                <br />
-                <span className='text-[#1dbf73]'> on Fiverr</span>
+                on Fiverr
+              </h1> */}
+
+              <h1 className='text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-4'>
+                Professional{" "}
+                <motion.span
+                  className='text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-cyan-300 '
+                  initial={{ backgroundPosition: "0% 50%" }}
+                  animate={{ backgroundPosition: "100% 50%" }}
+                  transition={{
+                    duration: 5,
+                    repeat: Number.POSITIVE_INFINITY,
+                    repeatType: "reverse",
+                  }}
+                >
+                  AI,
+                </motion.span>
+                <motion.span
+                  className='text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-cyan-300 block my-[8px]'
+                  initial={{ backgroundPosition: "0% 50%" }}
+                  animate={{ backgroundPosition: "100% 50%" }}
+                  transition={{
+                    duration: 5,
+                    repeat: Number.POSITIVE_INFINITY,
+                    repeatType: "reverse",
+                  }}
+                >
+                  App & Web Development
+                </motion.span>{" "}
+                <span className='block'>on Fiverr</span>
               </h1>
 
               <p className='text-lg md:text-xl text-purple-100/90 mb-8 max-w-2xl'>
